@@ -1,37 +1,37 @@
 const paises = require("../model/paises");
 
-// function validarAddUpdt(res, reqisicao) {
-//   if (!reqisicao.nome) {
-//     res.status(400).json({
-//       message: "NOME inválido. Verifique as informações da requisição no body.",
-//     });
-//     return true;
-//   } else if (!req.body.populacao) {
-//     res.status(400).json({
-//       message:
-//         "POPULAÇÃO inválida. Verifique as informações da requisição no body",
-//     });
-//     return true;
-//   } else if (!req.body.linguaMae) {
-//     res.status(400).json({
-//       message:
-//         "LINGUAMAE inválida. Verifique as informações da requisição no body.",
-//     });
-//     return true;
-//   } else if (!req.body.pib) {
-//     res.status(400).json({
-//       message: "PIB inválido. Verifique as informações da requisição no body.",
-//     });
-//     return true;
-//   }
-// }
+function validarAddUpdt(res, reqisicao) {
+  if (!reqisicao.nome) {
+    res.status(400).json({
+      message: "NOME inválido. Verifique as informações da requisição no body.",
+    });
+    return true;
+  } else if (!req.body.populacao) {
+    res.status(400).json({
+      message:
+        "POPULAÇÃO inválida. Verifique as informações da requisição no body",
+    });
+    return true;
+  } else if (!req.body.linguaMae) {
+    res.status(400).json({
+      message:
+        "LINGUAMAE inválida. Verifique as informações da requisição no body.",
+    });
+    return true;
+  } else if (!req.body.pib) {
+    res.status(400).json({
+      message: "PIB inválido. Verifique as informações da requisição no body.",
+    });
+    return true;
+  }
+}
 
-// function validaId(res, id) {
-//   if (id.length !== 24) {
-//     res.status(400).json({ message: "id precisa ter 24 caracteres" });
-//     return true;
-//   }
-// }
+function validaId(res, id) {
+  if (id.length !== 24) {
+    res.status(400).json({ message: "id precisa ter 24 caracteres" });
+    return true;
+  }
+}
 
 exports.getAll = async (req, res) => {
   await paises
