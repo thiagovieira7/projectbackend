@@ -73,6 +73,17 @@ https://projetbackend.herokuapp.com/estados/listall
 https://projetbackend.herokuapp.com/cidades/listall 
 ```
 
+-Exemplo:
+```
+{ 
+  nome: Cascavel
+  qtdBairros: 18
+  populacao: 330000
+  dtAniversario: 14/11/1951 
+
+}
+```
+
 
 ## Opções de consultas por id
 ### ``/listname/:id``
@@ -102,11 +113,47 @@ https://projetbackend.herokuapp.com/paises/add
 ```
 
 ```
+{ 
+  "nome": " "
+  populacao: 
+  linguaMae: " "
+  pib:  
+
+}
+```
+
+--------------------------------------------------
+
+
+```
 https://projetbackend.herokuapp.com/estados/add
 ```
 
 ```
+
+{ 
+  nome: " "
+  regiao: " "
+  populacao: 
+  vlSalarioMin:  
+
+}
+```
+
+--------------------------------------------------
+
+```
 https://projetbackend.herokuapp.com/cidades/add
+```
+
+```
+{ 
+  nome: " " 
+  qtdBairros: 
+  populacao: 
+  dtAniversario:  
+
+}
 ```
 
 
@@ -120,12 +167,49 @@ https://projetbackend.herokuapp.com/paises/update/2
 ```
 
 ```
+{ 
+  "nome": " "
+  populacao: 
+  linguaMae: " "
+  pib:  
+
+}
+```
+
+--------------------------------------------------
+
+
+```
 https://projetbackend.herokuapp.com/estados/update/5
 ```
 
 ```
+{ 
+  nome: " "
+  regiao: " "
+  populacao: 
+  vlSalarioMin:  
+
+}
+```
+
+-------------------------------------------------
+
+
+```
 https://projetbackend.herokuapp.com/cidades/update/9
 ```
+
+```
+{ 
+  nome: " " 
+  qtdBairros: 
+  populacao: 
+  dtAniversario:  
+
+}
+```
+
 
 
 ## Deletando dados
