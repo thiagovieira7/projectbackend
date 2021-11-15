@@ -5,6 +5,16 @@
 
 - Acesso atraves do Request https://projetbackend.herokuapp.com como url principal seguido das rotas e subrotas desejadas.
 
+- O arquivo .env deve ser criado com as seguintes informações: 
+
+```
+DB_BASE = ""    (Informar a base igual no heroku)
+DB_HOST = ""    (Informar host banco de dados database)
+DB_USER = ""    (Informar usuario banco de dados database)
+DB_PASS = ""    (Informar senha banco de dados database)
+PORT =          (informar porta localhost)
+```
+
 ## Rotas principais
 
 ```
